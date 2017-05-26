@@ -15,7 +15,9 @@
     "mongo": "mongod --dbpath data/db",
     "rethinkdb": "rethinkdb -d data/rethinkdb --driver-port 28015 --http-port 3002",
     "lint": "eslint .",
-    "plop": "plop"
+    "plop": "plop",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "babel-core": "6.3.26",
@@ -58,13 +60,13 @@
   "dependencies": {
     "babel-plugin-transform-runtime": "6.1.18",
     "babel-polyfill": "6.2.0",
-    "body-parser": "1.14.2",
+    "body-parser": "1.17.2",
     "compression": "1.6.0",
     "cookie": "0.2.3",
     "cookie-parser": "1.4.0",
     "cors": "2.7.1",
     "deepmerge": "0.2.10",
-    "express": "4.13.3",
+    "express": "4.15.3",
     "express-graphql": "0.4.5",
     "flux-standard-action": "0.6.0",
     "graphql": "0.4.14",
@@ -73,10 +75,10 @@
     "hoist-non-react-statics": "1.0.3",
     "isomorphic-fetch": "2.2.0",
     "js-sha256": "0.3.0",
-    "jsonwebtoken": "5.5.4",
+    "jsonwebtoken": "7.4.1",
     "kerberos": "0.0.17",
     "moment": "2.11.0",
-    "mongoose": "4.3.4",
+    "mongoose": "4.10.2",
     "normalize.css": "3.0.3",
     "normalizr": "1.4.0",
     "npmlog": "2.0.0",
@@ -95,6 +97,8 @@
     "redux-thunk": "1.0.3",
     "rethinkdb": "2.2.1",
     "source-map-support": "0.4.0",
-    "static-loader": "0.1.8"
-  }
+    "static-loader": "0.1.8",
+    "snyk": "^1.30.1"
+  },
+  "snyk": true
 }
