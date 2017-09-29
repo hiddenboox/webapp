@@ -15,7 +15,9 @@
     "mongo": "mongod --dbpath data/db",
     "rethinkdb": "rethinkdb -d data/rethinkdb --driver-port 28015 --http-port 3002",
     "lint": "eslint .",
-    "plop": "plop"
+    "plop": "plop",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "babel-core": "6.3.26",
@@ -58,13 +60,13 @@
   "dependencies": {
     "babel-plugin-transform-runtime": "6.1.18",
     "babel-polyfill": "6.2.0",
-    "body-parser": "1.14.2",
-    "compression": "1.6.0",
+    "body-parser": "1.18.2",
+    "compression": "1.7.1",
     "cookie": "0.2.3",
     "cookie-parser": "1.4.0",
     "cors": "2.7.1",
     "deepmerge": "0.2.10",
-    "express": "4.13.3",
+    "express": "4.16.0",
     "express-graphql": "0.4.5",
     "flux-standard-action": "0.6.0",
     "graphql": "0.4.14",
@@ -95,6 +97,8 @@
     "redux-thunk": "1.0.3",
     "rethinkdb": "2.2.1",
     "source-map-support": "0.4.0",
-    "static-loader": "0.1.8"
-  }
+    "static-loader": "0.1.8",
+    "snyk": "^1.41.1"
+  },
+  "snyk": true
 }
