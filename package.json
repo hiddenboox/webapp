@@ -76,7 +76,7 @@
     "jsonwebtoken": "5.5.4",
     "kerberos": "1.0.0",
     "moment": "2.11.0",
-    "mongoose": "4.3.4",
+    "mongoose": "5.12.2",
     "normalize.css": "3.0.3",
     "normalizr": "2.0.0",
     "npmlog": "2.0.0",
